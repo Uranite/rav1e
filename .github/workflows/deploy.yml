@@ -115,7 +115,7 @@ jobs:
       run: |
         cargo fetch
         cargo cinstall \
-          --profile ${{ matrix.profile }} \
+          --${{ matrix.profile }} \
           --destdir="C:\" \
           --libdir lib --prefix /usr/rav1e-windows-${{ matrix.conf }}-sdk \
           --offline

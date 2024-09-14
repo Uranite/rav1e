@@ -6,6 +6,7 @@ on:
     tags:
       - 'v*.*.*'
       - 'p*'
+  workflow_dispatch:
 
 jobs:
   windows-rav1e-ch-binary:
